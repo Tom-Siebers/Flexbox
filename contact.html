@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Wandr | Discover the World</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<nav>
+    <div class="topnav">
+        <a href="index.html" class="topnav-wandr">Wandr.</a>
+        <div class="topnav-right">
+            <ul>
+                <li><a href="africa.html">Africa</a></li>
+                <li><a href="antarctica.html">Antarctica</a></li>
+                <li><a href="asia.html">Asia</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section>
+    <div class="box-1">
+        <h1>Contact</h1>
+        <h2>What can I help you with?</h2>
+        <form name="contact" method="POST" data-netlify="true">
+            <p>
+                <label>Your name<br><input type="text" name="name" /></label>
+            </p>
+            <p>
+                <label>Your email<br><input type="email" name="email" /></label>
+            </p>
+            <p>
+                <label>Your phone number<br><input type="tel" name="phone" /></label>
+            </p>
+            <p>
+                <label>Your date of birth<br><input type="date" name="birthday" /></label>
+            </p>
+            <p>Your gender</p>
+            <p>
+                <label><input type="radio" name="gender" value="male"/>Male</label><br>
+                <label><input type="radio" name="gender" value="male"/>Female</label><br>
+                <label><input type="radio" name="gender" value="male"/>Other</label>
+            </p>
+            <p>Your favorite cuisine</p>
+            <p>
+                <label><input type="checkbox" name="french" value="french"/>French</label><br>
+                <label><input type="checkbox" name="italian" value="italian"/>Italian</label><br>
+                <label><input type="checkbox" name="spanish" value="spanish"/>Spanish</label><br>
+                <label><input type="checkbox" name="arabic" value="arabic"/>Arabic</label>
+            </p>
+            <p>
+                <label>Your favorite color<br><input type="color" name="favcolor" /></label>
+            </p>
+            <p>
+                <label>Your biography<br><textarea name="biography" rows="4" cols="50"></textarea></label>
+            </p>
+            <p>
+                <label>Upload your latest recipe<br><input type="file" name="recipe"></label>
+            </p>
+            <p>
+                <label>Link to your recipe website<br><input type="url" name="website"></label>
+            </p>
+            <p>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+            </p>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>Wandr | 2021</p>
+</footer>
+
+</html>

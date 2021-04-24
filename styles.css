@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+  font: normal 14px Roboto, sans-serif;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 56px;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 400;
+  color: #888888;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 500;
+}
+
+h1 + h2 {
+  margin-top: 8px;
+}
+
+h1 + p,
+h2 + p {
+  margin-top: 16px;
+}
+
+p {
+  line-height: 22px;
+  margin-bottom: 16px;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+.topnav {
+  height: 64px;
+  border-bottom: 1px solid #387c6d;
+}
+
+.topnav-wandr {
+  color: #000;
+  font-weight: 500;
+  font-size: 40px;
+  position: relative;
+  top: 8px;
+  margin-left: 32px;
+}
+
+.topnav a {
+  text-align: center;
+  text-decoration: none;
+}
+
+.topnav-right {
+  float: right;
+  position: relative;
+  top: 14px;
+  margin-right: 32px;
+}
+
+.topnav ul li {
+  list-style-type: none;
+  display: inline-block;
+  font-size: 16px;
+  padding-top: 8px;
+  margin-right: 16px;
+}
+
+.topnav li:last-child {
+  margin-right: 0;
+}
+
+.topnav-right a {
+  color: #888888;
+}
+
+.topnav-right a:hover {
+  color: #444444;
+}
+
+.topnav-right a.active {
+  color: #000;
+}
+
+.hero {
+  width: 80%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid #e9896a;
+  border-radius: 8px;
+  padding: 32px;
+  margin: 16px auto 0;
+}
+
+#africa {
+  background-image: url(images/africa.jpg);
+}
+
+#antarctica {
+  background-image: url(images/antarctica.jpg);
+}
+
+#asia {
+  background-image: url(images/asia.jpg);
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-bottom: 56px;
+}
+
+.blogpost {
+  width: 300px;
+  border: 1px solid #e9896a;
+  border-radius: 8px;
+  align-items: center;
+  margin: 24px;
+}
+
+.blog-img {
+  height: 180px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px 8px 0 0;
+}
+
+.blogpost h3 {
+  padding: 16px;
+}
+
+.blogpost-bali {
+  flex-grow: 1;
+}
+
+.blogpost-amsterdam {
+  order: -1;
+  flex-grow: 2;
+}
+
+.blogpost-prague {
+  order: -1;
+  flex-grow: 1;
+}
+
+.blogpost-rio-de-janeiro {
+  order: -1;
+  flex-grow: 1;
+}
+
+.blogpost-tulum {
+  flex-grow: 1;
+}
+
+.box-1 {
+  width: 80%;
+  border: 1px solid #e9896a;
+  border-radius: 8px;
+  padding: 32px;
+  margin: 16px auto 0;
+}
+
+.box-1:last-child {
+  margin-bottom: 56px;
+}
+
+footer {
+  position: fixed;
+  height: 40px;
+  width: 100%;
+  border-top: 1px solid #387c6d;
+  background-color: #fff;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+}
+
+footer p {
+  margin-top: 9px;
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-color: #eeeeee;
+  }
+  h1 {
+    font-size: 72px;
+    line-height: 86px;
+  }
+  h2 {
+    font-size: 32px;
+    line-height: 44px;
+  }
+  h1 + p,
+  h2 + p {
+    margin-top: 24px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .hero {
+    height: 400px;
+    margin: 32px auto;
+  }
+  .box-1 {
+    margin: 32px auto 0;
+  }
+  .box-1:last-child {
+    margin-bottom: 72px;
+  }
+  footer {
+    background-color: #eeeeee;
+  }
+}
